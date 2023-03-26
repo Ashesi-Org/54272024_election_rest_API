@@ -1,0 +1,64 @@
+
+*******************
+* Voter Table *
+*******************
+voter_id: int (primary key)
+name: varchar(255)
+email: varchar(255)
+student_id: varchar(50)
+date_of_birth: date
+department: varchar(255)
+gender: enum('Male', 'Female', 'Other')
+voter_status: enum('Active', 'Inactive', 'Blocked')
+created_at: timestamp
+updated_at: timestamp
+
+*******************
+* Candidate Table *
+*******************
+candidate_id: int (primary key)
+name: varchar(255)
+email: varchar(255)
+statement: varchar(1000)
+photo_url: varchar(255)
+candidate_status: enum('Approved', 'Rejected', 'Pending')
+created_at: timestamp
+updated_at: timestamp
+
+
+*******************
+* Election Table  *
+*******************
+election_id: int (primary key)
+name: varchar(255)
+start_time: datetime
+end_time: datetime
+description: text
+election_type: enum('General', 'Departmental', 'Hall', 'Others')
+status: enum('Open', 'Closed', 'Scheduled', 'Cancelled')
+created_at: timestamp
+updated_at: timestamp
+
+
+
+*****************
+* Ballot Table  *
+*****************
+ballot_id: int (primary key)
+voter_id: int (foreign key to Voter Table)
+candidate_id: int (foreign key to Candidate Table)
+election_id: int (foreign key to Election Table)
+vote_time: datetime
+created_at: timestamp
+updated_at: timestamp
+
+
+*****************
+* Results Table *
+*****************
+result_id: int (primary key)
+candidate_id: int (foreign key to Candidate Table)
+election_id: int (foreign key to Election Table)
+vote_count: int
+created_at: timestamp
+updated_at: timestamp
