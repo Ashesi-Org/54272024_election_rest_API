@@ -1,0 +1,11 @@
+{
+    "ballots": [
+        {
+            "ballot_id": 1,
+            "student_id": 78962024,
+            "candidate_id": 32023,
+            "election_id": 1,
+            "vote_time": "2022-03-27T10:30:00Z"
+        }
+    ]
+}

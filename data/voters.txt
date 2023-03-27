@@ -1,0 +1,34 @@
+{
+    "voters": [
+        {
+            "created_at": "2022-03-27T12:00:00Z",
+            "department": "Electrical Engineering",
+            "email": "simon.boateng@ashesi.edu.gh",
+            "gender": "Male",
+            "name": "Simon Boateng",
+            "student_id": 32023,
+            "updated_at": "2022-03-27T12:00:00Z",
+            "voter_status": "Inactive"
+        },
+        {
+            "student_id": 78962024,
+            "name": "David Osei",
+            "email": "david.osei@ashesi.edu.gh",
+            "department": "Electrical Engineering",
+            "gender": "Male",
+            "voter_status": "Inactive",
+            "created_at": "2022-03-27T12:00:00Z",
+            "updated_at": "2022-03-27T12:00:00Z"
+        },
+        {
+            "student_id": 78952024,
+            "name": "Noah Osei",
+            "email": "noah.adasi@ashesi.edu.gh",
+            "department": "Computer Engineering",
+            "gender": "Male",
+            "voter_status": "Active",
+            "created_at": "2022-03-27T12:00:00Z",
+            "updated_at": "2022-03-27T12:00:00Z"
+        }
+    ]
+}

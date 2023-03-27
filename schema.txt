@@ -1,12 +1,9 @@
-
 *******************
 * Voter Table *
 *******************
-voter_id: int (primary key)
+student_id: int
 name: varchar(255)
 email: varchar(255)
-student_id: varchar(50)
-date_of_birth: date
 department: varchar(255)
 gender: enum('Male', 'Female', 'Other')
 voter_status: enum('Active', 'Inactive', 'Blocked')
@@ -16,14 +13,13 @@ updated_at: timestamp
 *******************
 * Candidate Table *
 *******************
-candidate_id: int (primary key)
-name: varchar(255)
+candidate_id: int 
+election_id:int
 email: varchar(255)
-statement: varchar(1000)
+vote_for:int
 photo_url: varchar(255)
 candidate_status: enum('Approved', 'Rejected', 'Pending')
-created_at: timestamp
-updated_at: timestamp
+
 
 
 *******************
@@ -40,7 +36,6 @@ created_at: timestamp
 updated_at: timestamp
 
 
-
 *****************
 * Ballot Table  *
 *****************
@@ -49,16 +44,3 @@ voter_id: int (foreign key to Voter Table)
 candidate_id: int (foreign key to Candidate Table)
 election_id: int (foreign key to Election Table)
 vote_time: datetime
-created_at: timestamp
-updated_at: timestamp
-
-
-*****************
-* Results Table *
-*****************
-result_id: int (primary key)
-candidate_id: int (foreign key to Candidate Table)
-election_id: int (foreign key to Election Table)
-vote_count: int
-created_at: timestamp
-updated_at: timestamp

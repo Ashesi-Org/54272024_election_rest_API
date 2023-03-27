@@ -1,0 +1,12 @@
+{
+    "candidates": [
+        {
+            "candidate_id": 32023,
+            "election_id": 1,
+            "email": "jane.doe@ashesi.edu.gh",
+            "vote_for": 4,
+            "photo_url": "https://example.com/photo.jpg",
+            "candidate_status": "Pending"
+        }
+    ]
+}
