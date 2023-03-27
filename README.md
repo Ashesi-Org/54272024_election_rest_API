@@ -9,3 +9,6 @@ Lab work for simulating flask rest api for campus election platform
 ` python3 main.py `
 
 
+* check schema.txt for structure of the data , especially data types
+
+
