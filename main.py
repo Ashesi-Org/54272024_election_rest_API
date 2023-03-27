@@ -15,7 +15,7 @@ def index():
 
 @app.route('/register', methods=['POST'])
 def register_voter():
-
+    
     voter: json = request.get_json()
 
     added_voter = add_voter(voter)
