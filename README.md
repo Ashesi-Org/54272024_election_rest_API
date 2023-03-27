@@ -1,2 +1,2 @@
-# simon_flask_election_rest_API
+# MODELLED REST API FOR ELECTION SYSTEM
 Lab work for simulating flask rest api for campus election platform
